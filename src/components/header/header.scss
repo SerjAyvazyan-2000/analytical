@@ -10,8 +10,8 @@ header {
   background: $light-white;
   padding: 28px 0 0;
   transition: .3s;
-  @include screen-max-width-576{
-    padding: 8px 0 0 ;
+  @include screen-max-width-576 {
+    padding: 8px 0 0;
   }
 }
 
@@ -24,7 +24,7 @@ header.moved {
   .header-logo {
     height: 120px;
 
-    @include screen-max-width-576{
+    @include screen-max-width-576 {
       height: 60px;
     }
   }
@@ -35,14 +35,14 @@ header.moved {
   transition: .3s;
   height: 185px;
   max-height: 185px;
-  @include screen-max-width-1300{
+  @include screen-max-width-1300 {
     height: 120px;
     position: relative;
     z-index: 2;
 
 
   }
-  @include screen-max-width-576{
+  @include screen-max-width-576 {
     max-width: 170px;
     height: 60px;
   }
@@ -56,16 +56,16 @@ header.moved {
 .menu-list {
   gap: 80px;
 
-  @include screen-max-width-1300{
+  @include screen-max-width-1300 {
     gap: 20px;
   }
-  @include screen-max-width-991{
+  @include screen-max-width-991 {
     flex-direction: column;
     padding-top: 150px;
     gap: 50px;
 
   }
-  @include screen-max-width-576{
+  @include screen-max-width-576 {
     padding-top: 100px;
 
   }
@@ -85,13 +85,13 @@ header.moved {
     font-size: 48px;
     background: $gray;
 
-    @include screen-max-width-576{
+    @include screen-max-width-576 {
       font-size: 20px;
 
     }
   }
 
-  @include screen-max-width-576{
+  @include screen-max-width-576 {
     font-size: 16px;
     line-height: 18px;
   }
@@ -100,13 +100,15 @@ header.moved {
     color: $black;
 
   }
-  @include screen-max-width-1200{
+
+  @include screen-max-width-1200 {
     gap: 10px;
 
   }
 }
-.menu{
-  @include screen-max-width-991{
+
+.menu {
+  @include screen-max-width-991 {
     position: fixed;
     right: -100%;
     top: 0;
@@ -115,54 +117,63 @@ header.moved {
     background: $light-white;
     transition: .3s;
   }
-  &.active{
+
+  &.active {
     right: 0;
 
   }
 }
 
-.icon-arrow {
-  font-size: 20px;
-  background: $primary;
-  transition: .3s;
-
-
-  @include screen-max-width-576{
-    font-size: 15px;
-  }
-
-}
 
 .menu-item {
   position: relative;
 
-  &.active{
+  &.active {
     .sub-menu {
       opacity: 1;
       visibility: visible;
     }
 
-    .icon-arrow {
-      transform: rotate(180deg);
-    }
   }
 
-  &:hover{
+  &:hover {
     @media (any-hover: hover) {
       .sub-menu {
         opacity: 1;
         visibility: visible;
       }
 
-      .icon-arrow {
-        transform: rotate(180deg);
-      }
+
     }
 
   }
 
 }
 
+.menu-clue-item {
+
+  &:hover {
+    .menu-clue{
+      opacity:1;
+      visibility: visible;
+    }
+
+  }
+
+  .menu-clue {
+    position: absolute;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 22px;
+    color: black;
+    top: -20px;
+    right: -50px;
+    opacity: 0;
+    transition: .3s;
+    visibility: hidden;
+
+  }
+}
 
 
 .sub-menu {
@@ -177,7 +188,7 @@ header.moved {
   border-radius: 10px;
   min-width: 300px;
 
-  @include screen-max-width-576{
+  @include screen-max-width-576 {
     top: 30px;
     padding: 5px;
     min-width: 240px;
@@ -199,7 +210,8 @@ header.moved {
     color: $black;
 
   }
-  @include screen-max-width-576{
+
+  @include screen-max-width-576 {
     font-size: 15px;
     line-height: 18px;
 
@@ -223,36 +235,39 @@ header.moved {
     z-index: 4;
 
   }
-  @include screen-max-width-576{
+  @include screen-max-width-576 {
     width: 30px;
     height: 20px;
   }
 }
+
 .burger::after {
   width: 100%;
   content: '';
   display: block;
   height: 2.3px;
-  background:$black;
+  background: $black;
   transition: .3s;
   border-radius: 5px;
 
 }
+
 .burger span {
   width: 100%;
   display: block;
   height: 2.5px;
-  background:$black;
+  background: $black;
   transition: .3s;
   border-radius: 5px;
 
 }
+
 .burger::before {
   width: 100%;
   content: '';
   display: block;
   height: 2.5px;
-  background:$black;
+  background: $black;
   transition: .3s;
   border-radius: 5px;
 
@@ -273,14 +288,13 @@ header.moved {
 }
 
 
-
 .burger.active::after {
   transform: rotate(45deg);
   bottom: 14px;
   height: 1.5px;
   position: relative;
 
-  @include screen-max-width-576{
+  @include screen-max-width-576 {
     bottom: 10px;
   }
 }

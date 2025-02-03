@@ -3,6 +3,7 @@ import heroImg from '../../assets/images/heroImg.png'
 import aboutMedia from '../../assets/images/aboutMedia.png'
 import libraryImg from '../../assets/images/libraryImg.png'
 import experts from '../../assets/images/experts.png'
+import {Link} from "react-router-dom";
 
 
 const Home = () => {
@@ -49,10 +50,10 @@ const Home = () => {
                                 проекты и продукты.
                             </p>
                         </div>
-                        <button className='about-us-btn btn-primary G-align-center'>
+                        <Link to={'https://drti-bkd.sandcloud.ru/'} className='about-us-btn btn-primary G-align-center'>
                             <span>Перейти к поиску по базе</span>
                             <i className='icon icon-goTo'></i>
-                        </button>
+                        </Link>
                     </div>
                 </div>
 
@@ -76,9 +77,10 @@ const Home = () => {
                             </p>
                         </div>
 
-                        <button className='library-btn btn-primary G-align-center'>
+                        <button className='library-btn bnt-clue btn-primary G-align-center'>
                             <span>Перейти в библиотеку знаний</span>
                             <i className='icon icon-goTo'></i>
+                            <p className='bnt-clue-text'>В разработке</p>
                         </button>
                     </div>
 
@@ -113,9 +115,10 @@ const Home = () => {
                             </p>
                         </div>
 
-                        <button className='library-btn btn-primary G-align-center'>
+                        <button className='library-btn bnt-clue btn-primary G-align-center'>
                             <span>Перейти к поиску эксперта</span>
                             <i className='icon icon-goTo'></i>
+                            <p className='bnt-clue-text'>В разработке</p>
                         </button>
                     </div>
 

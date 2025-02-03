@@ -154,9 +154,9 @@
   background: $dark-primary;
   border-radius: 8px;
   position: relative;
-  overflow: hidden;
   transition: background-color 0.3s ease, transform 0.2s ease;
   justify-content: center;
+  max-width: max-content;
 
   span {
     font-size: 24px;
@@ -214,6 +214,29 @@
 
   }
 
+}
+
+.bnt-clue{
+  position: relative;
+
+  &:hover{
+    .bnt-clue-text{
+      opacity: 1;
+      visibility: visible;
+    }
+  }
+  .bnt-clue-text{
+    font-size: 18px;
+    position: absolute;
+    font-weight: 700;
+    line-height: 22px;
+    color: $black;
+    opacity: 0;
+    visibility: hidden;
+    transition: .3s;
+    top: -22px;
+    right: 0;
+  }
 }
 
 .icon-goTo {
