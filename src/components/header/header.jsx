@@ -71,7 +71,7 @@ const Header = () => {
 
                     <ul className="menu-list G-align-center">
                         <li className={`menu-item`}>
-                            <Link className="menu-link G-align-center" to={'https://drti-bkd.sandcloud.ru/'}>
+                            <Link target={"_blank"} className="menu-link G-align-center" to={'https://drti-bkd.sandcloud.ru/'}>
                                 <i className={`icon menu-icon icon-projects`}></i>
                                 <span>Проекты</span>
                             </Link>

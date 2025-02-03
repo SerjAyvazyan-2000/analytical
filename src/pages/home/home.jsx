@@ -50,7 +50,7 @@ const Home = () => {
                                 проекты и продукты.
                             </p>
                         </div>
-                        <Link to={'https://drti-bkd.sandcloud.ru/'} className='about-us-btn btn-primary G-align-center'>
+                        <Link target={"_blank"} to={'https://drti-bkd.sandcloud.ru/'} className='about-us-btn btn-primary G-align-center'>
                             <span>Перейти к поиску по базе</span>
                             <i className='icon icon-goTo'></i>
                         </Link>

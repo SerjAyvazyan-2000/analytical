@@ -234,8 +234,11 @@
     opacity: 0;
     visibility: hidden;
     transition: .3s;
-    top: -22px;
-    right: 0;
+    top: -30px;
+    right: -120px;
+    padding: 10px;
+    border-radius: 5px;
+    background: $white;
   }
 }
 
