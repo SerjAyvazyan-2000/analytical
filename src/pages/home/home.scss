@@ -1,0 +1,300 @@
+@import "../../assets/css/variables";
+@import "../../assets/css/mixin";
+
+.hero-section {
+  padding: 230px 0 0;
+  background: $light-white;
+  @include screen-max-width-576 {
+    padding: 100px 0 0;
+
+
+  }
+}
+
+.hero-description {
+  max-width: 510px;
+
+  @include screen-max-width-991 {
+    max-width: 100%;
+  }
+}
+
+.hero-body {
+  gap: 20px;
+  align-items: center;
+
+  @include screen-max-width-991 {
+    flex-direction: column;
+    align-items: stretch;
+  }
+}
+
+.hero-title {
+  font-size: 34px;
+  font-weight: 700;
+  line-height: 40.57px;
+  color: $primary;
+  @include screen-max-width-576 {
+    font-size: 20px;
+    line-height: 25px;
+
+  }
+}
+
+.hero-text {
+  font-size: 34px;
+  font-weight: 400;
+  line-height: 40.57px;
+  color: $black;
+  @include screen-max-width-576 {
+    font-size: 18px;
+    line-height: 22px;
+
+  }
+}
+
+.hero-media {
+  max-width: 680px;
+  width: 100%;
+
+  @include screen-max-width-991 {
+    max-width: 100%;
+  }
+}
+
+
+.about-us-section {
+  padding: 29px 0 41px 0;
+}
+
+.about-us-body {
+  gap: 148px;
+
+  @include screen-max-width-1200 {
+    gap: 40px;
+
+  }
+  @include screen-max-width-991 {
+    flex-direction: column-reverse;
+    align-items: stretch;
+
+  }
+}
+
+.about-us-title {
+  font-size: 34px;
+  font-weight: 700;
+  line-height: 40.57px;
+
+  @include screen-max-width-576 {
+    font-size: 18px;
+    line-height: 22px;
+
+  }
+}
+
+.text-primary {
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 53.28px;
+  color: $primary;
+  @include screen-max-width-576 {
+    font-size: 20px;
+    line-height: 22px;
+
+  }
+}
+
+.about-us-description {
+  max-width: 620px;
+  width: 100%;
+  @include screen-max-width-991 {
+    max-width: 100%;
+
+  }
+}
+
+.about-us-texts {
+  margin-top: 20px;
+  gap: 20px;
+
+  p {
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 28px;
+    color: $black;
+    @include screen-max-width-576 {
+      font-size: 16px;
+      line-height: 20px;
+
+    }
+
+  }
+  @include screen-max-width-576 {
+    margin-top:10px;
+    gap: 10px;
+
+  }
+}
+
+.desktop-text-wrap {
+  display: block;
+  @include screen-max-width-991 {
+    display: inline;
+  }
+}
+
+.about-us-btn {
+  margin-top: 32px;
+}
+
+.btn-primary {
+  gap: 21px;
+  padding: 17px 36px;
+  background: $dark-primary;
+  border-radius: 8px;
+  position: relative;
+  overflow: hidden;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  justify-content: center;
+
+  span {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 28.64px;
+    color: $white;
+    @include screen-max-width-576{
+      font-size: 16px;
+      line-height: 22px;
+
+    }
+
+  }
+
+  i {
+    transition: .3s;
+  }
+
+  &:hover {
+    background-color: $dark-primary;
+    transform: translateY(-2px);
+
+    i {
+      transform: translateX(5px);
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 300%;
+      height: 300%;
+      top: 50%;
+      left: 50%;
+      background: radial-gradient(circle, rgba(255, 255, 255, 0.2) 0%, transparent 60%);
+      transition: opacity 0.3s ease;
+      transform: translate(-50%, -50%);
+      opacity: 1;
+    }
+  }
+
+  &:not(:hover) {
+    i {
+      transform: translateX(0);
+      transition: transform 0.3s ease;
+    }
+
+    &::before {
+      opacity: 0;
+    }
+  }
+
+  @include screen-max-width-576{
+    width: 100%;
+    padding: 17px 20px;
+
+  }
+
+}
+
+.icon-goTo {
+  font-size: 30px;
+  background: $white;
+
+  @include screen-max-width-576{
+    font-size: 20px;
+
+  }
+}
+
+.library-body {
+  gap: 28px;
+
+  @include screen-max-width-991{
+    flex-direction: column;
+    align-items: stretch;
+  }
+}
+
+.library-section {
+  padding: 10px 0;
+  background: $light-white;
+}
+
+.library-info {
+  max-width: 620px;
+  width: 100%;
+  @include screen-max-width-991{
+    max-width: 100%;
+  }
+}
+
+.library-title {
+  font-size: 34px;
+  font-weight: 700;
+  line-height: 40.57px;
+  color: $primary;
+  @include screen-max-width-576{
+    font-size: 20px;
+
+  }
+}
+
+.library-texts {
+  margin-top: 20px;
+  gap: 20px;
+
+  p {
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 28.64px;
+    color: $black;
+    @include screen-max-width-576{
+      font-size: 16px;
+      line-height: 22px;
+
+    }
+
+  }
+  @include screen-max-width-576{
+    margin-top: 10px;
+    gap: 10px;
+
+  }
+}
+
+.library-btn {
+  margin-top: 32px;
+}
+
+.experts-section {
+  padding: 44px 0;
+}
+
+.experts-body {
+  gap: 20px;
+  justify-content: space-between;
+
+  @include screen-max-width-991{
+    flex-direction: column-reverse;
+  }
+}

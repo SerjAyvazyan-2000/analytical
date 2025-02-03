@@ -1,0 +1,68 @@
+@import "../../assets/css/variables";
+@import "../../assets/css/mixin";
+
+footer {
+  padding: 39px 0;
+  background: $light-white;
+}
+
+.footer-body {
+  justify-content: space-between;
+  gap: 20px;
+
+  @include screen-max-width-991 {
+    flex-direction: column;
+  }
+}
+
+.footer-text {
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 31px;
+  color: $black;
+
+
+  @include screen-max-width-991 {
+    font-size: 22px;
+
+  }
+
+  @include screen-max-width-576 {
+    font-size: 18px;
+    text-align: center;
+    line-height: 22px;
+
+  }
+}
+
+.footer-link {
+  gap: 25px;
+
+  span {
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 31px;
+    color: $primary;
+    text-decoration: underline;
+    text-underline-offset: 8px;
+
+    @include screen-max-width-576 {
+      font-size: 16px;
+      text-align: center;
+      line-height: 22px;
+
+    }
+  }
+  @include screen-max-width-576 {
+    gap: 10px;
+  }
+  .icon-sms {
+    font-size: 34px;
+    background: $gray;
+
+    @include screen-max-width-576 {
+      font-size: 20px;
+
+    }
+  }
+}

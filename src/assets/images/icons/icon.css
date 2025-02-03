@@ -1,0 +1,38 @@
+@charset "UTF-8";
+
+.icon {
+    display: inline-block;
+    height: 1em;
+    width: 1em;
+    mask-size: contain;
+    -webkit-mask-size: contain;
+    mask-repeat: no-repeat;
+    -webkit-mask-repeat: no-repeat;
+    mask-position: center;
+    -webkit-mask-position: center;
+}
+
+.icon-projects{
+    mask-image: url(projects.svg);
+    -webkit-mask-image: url(projects.svg);
+}
+.icon-analytics{
+    mask-image: url(analytics.svg);
+    -webkit-mask-image: url(analytics.svg);
+}
+.icon-experts{
+    mask-image: url(experts.svg);
+    -webkit-mask-image: url(experts.svg);
+}
+.icon-goTo{
+    mask-image: url(goTo.svg);
+    -webkit-mask-image: url(goTo.svg);
+}
+.icon-sms{
+    mask-image: url(sms.svg);
+    -webkit-mask-image: url(sms.svg);
+}
+.icon-arrow{
+    mask-image: url(arrow.svg);
+    -webkit-mask-image: url(arrow.svg);
+}
